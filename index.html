@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/pizza.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p id="student-info"></p>
+        </div>
+        <h1>The Pizza Maker</h1>
+        <form id="pizza-form">
+            <label for="crust">Choose Your Crust:</label>
+            <select id="crust" name="crust">
+                <option value="Thin Crust">Thin Crust</option>
+                <option value="Thick Crust">Thick Crust</option>
+                <option value="Stuffed Crust">Stuffed Crust</option>
+            </select>
+
+            <label for="sauce">Select Your Sauce:</label>
+            <select id="sauce" name="sauce">
+                <option value="Classic Tomato">Classic Tomato</option>
+                <option value="Alfredo Sauce">Alfredo Sauce</option>
+            </select>
+
+            <label for="toppings">Pick Your Toppings:</label>
+            <div id="toppings">
+                <div>
+                    <h3>Meats:</h3>
+                    <label><input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="topping" value="Sausage"> Sausage</label>
+                    <label><input type="checkbox" name="topping" value="Bacon"> Bacon</label>
+                    <label><input type="checkbox" name="topping" value="Ham"> Ham</label>
+                    <label><input type="checkbox" name="topping" value="Grilled Chicken"> Grilled Chicken</label>
+                </div>
+                <div>
+                    <h3>Vegetables:</h3>
+                    <label><input type="checkbox" name="topping" value="Mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="topping" value="Bell Peppers"> Bell Peppers</label>
+                    <label><input type="checkbox" name="topping" value="Onions"> Onions</label>
+                    <label><input type="checkbox" name="topping" value="Black Olives"> Black Olives</label>
+                </div>
+            </div>
+
+            <label for="size">Select Your Size:</label>
+            <select id="size" name="size">
+                <option value="Small (10in)">Small (10")</option>
+                <option value="Medium (12in)">Medium (12")</option>
+                <option value="Large (14in)">Large (14")</option>
+            </select>
+
+            <button type="button" id="order-btn">Order</button>
+        </form>
+        <div id="order-summary"></div>
+    </div>
+</body>
+</html>
