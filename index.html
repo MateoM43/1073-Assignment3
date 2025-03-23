@@ -9,6 +9,7 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
+    <!-- Main container for the page content -->
     <div class="container">
         <div class="header">
             <p id="student-info"></p>
@@ -27,7 +28,7 @@
                 <option value="Classic Tomato">Classic Tomato</option>
                 <option value="Alfredo Sauce">Alfredo Sauce</option>
             </select>
-
+            <!-- Section for choosing pizza toppings -->
             <label for="toppings">Pick Your Toppings:</label>
             <div id="toppings">
                 <div>
@@ -46,16 +47,17 @@
                     <label><input type="checkbox" name="topping" value="Black Olives"> Black Olives</label>
                 </div>
             </div>
-
+            <!-- Dropdown to select pizza size -->
             <label for="size">Select Your Size:</label>
             <select id="size" name="size">
                 <option value="Small (10in)">Small (10")</option>
                 <option value="Medium (12in)">Medium (12")</option>
                 <option value="Large (14in)">Large (14")</option>
             </select>
-
+            <!-- Button to submit the pizza order -->
             <button type="button" id="order-btn">Order</button>
         </form>
+        <!-- Section to display the order summary -->
         <div id="order-summary"></div>
     </div>
 </body>
